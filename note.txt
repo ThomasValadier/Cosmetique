@@ -1,0 +1,47 @@
+// if (isset($_POST['submit'])) {
+//
+// $pseudo = htmlspecialchars($_POST['pseudo']);
+// $password = sha1($_POST['password']);
+// $repeatpassword = sha1($_POST['repeatpassword']);
+// $email = htmlspecialchars($_POST['email']);
+// $sexe = $_POST['sexe'];
+//
+// if (!empty($pseudo) AND !empty($password) AND !empty($repeatpassword) AND !empty($email)) {
+//
+//   $pseudolength = strlen($pseudo);
+//
+//   if ($pseudolength <= 40) {
+//
+//     $verifaccount = $DB->query('SELECT * FROM users WHERE pseudo = ?');
+//     //$verifaccount = $db->prepare("SELECT * FROM users WHERE pseudo = ?");
+//     $verifaccount -> execute(array($pseudo));
+//     $pseudoexist = $verifaccount->rowCount();
+//
+//
+//
+//     if ($pseudoexist == 0) {
+//       if ($password == $repeatpassword) {
+//
+//         $insertuser = "INSERT INTO users ( pseudo, password, email, sexe) VALUES (:pseudo, :password, :email, :sexe)";
+//         $query = $db->prepare( $insertuser );
+//         $result = $query->execute( array( ':pseudo'=>$pseudo, ':password'=>$password, ':email'=>$email, ':sexe'=>$sexe) );
+//         $erreur = "Votre compte a bien été créé";
+//       }else{
+//         $erreur = "Vos passwords sont différents";
+//       }
+//     }else {
+//       $erreur = "Pseudo esiste déjà";
+//     }
+//   }else {
+//     $erreur = " Pseudo trop long";
+//   }
+// }else {
+// $erreur = "Tous les champs ne sont pas complétés";
+// }
+//   // puis on le redirige vers la page d'accueil
+//   //header('Location: index.php');
+// }*/
+//
+// /**
+// *
+// */

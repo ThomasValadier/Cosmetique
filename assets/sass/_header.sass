@@ -1,0 +1,78 @@
+//- VARIABLES
+@import 'variables'
+
+//- HEADER
+
+.navbar
+    padding: 50px 0 0 0
+    font-family: 'Open Sans Condensed', sans-serif
+    font-size: 18px
+    .zone_navbar
+        height: 90px
+        border-bottom: 1px solid $gris-clair
+        padding: 0
+        .brand
+            float: left
+            a
+                margin-left: -15px
+                font-size: 20px
+                color: orange
+                background-color: $gris-clair
+                padding: 15px 20px
+            a:hover
+                text-decoration: none
+        .items_1
+            padding-left: 70px
+            ul
+                li
+                    display: table-cell
+                    a
+                        margin: 0 20px 0 0
+                        text-decoration: none
+                        color: $gris-fonce
+                        span
+                            color: transparent
+                    a:hover
+                        color: orange
+                    a:focus
+                        color: orange
+                        text-decoration: none
+        .items_2
+            padding: 0
+            ul
+                list-style-type: none
+                li
+                    .btn-default
+                        background-color: white
+                        border: none
+                        color: $gris-fonce
+                        font-size: 18px
+                        margin-top: -5px
+                        span
+                            color: orange
+                        .dropdown-menu
+                            border: none
+                            li
+                                a
+                                    color: $gris-fonce
+                                    text-transform: uppercase
+                                a:hover
+                                    color: $gris-fonce
+                                    background-color: white
+                    .btn-default:focus
+                        outline: none
+                    display: table-cell
+                    float: right
+                    margin-left: 40px
+                    a
+                        color: $gris-fonce
+                        text-decoration: none
+                        span
+                            color: orange
+                    a:hover
+                        color: orange
+                        text-decoration: none
+                    a:focus
+                        color: orange
+                        text-decoration: none
+                        background-color: white
