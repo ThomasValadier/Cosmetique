@@ -1,8 +1,7 @@
 # Cosmetique
 
 -Modification de la page catégorie_produit pour s'adapté au mode admin ->bouton pour modifier ou supprimer à la place du bouton adpannier
-
--Quelques modifs dans le style au niveau de la taille des images, du styles des bouttons modifier et supprimer
+   Quelques modifs dans le style au niveau de la taille des images, du styles des bouttons modifier et supprimer
 
 -Ajout de fonction à la page db classe (fonction insert + requete)
 
