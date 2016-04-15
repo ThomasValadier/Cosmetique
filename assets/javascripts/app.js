@@ -7,7 +7,7 @@
         alert(data.message);
       }else{
         if(confirm(data.message + '. Voulez-vous consulter votre panier ?')){
-          location.href = '../pages/panier.php';
+          location.href = '../views/panier.php';
         }else{
           //$('#total').empty().append(data.total);
           $('#count').empty().append(data.count);
@@ -28,7 +28,7 @@
         alert(data.message);
       }else{
         if(confirm(data.message + '. Voulez-vous consulter votre panier ?')){
-          location.href = '../panier.php';
+          location.href = '../views/panier.php';
         }else{
           //$('#total').empty().append(data.total);
           $('#count').empty().append(data.count);
@@ -39,3 +39,7 @@
   });
 
 })(jQuery);
+
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').focus()
+})
