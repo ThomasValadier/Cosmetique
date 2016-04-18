@@ -7,6 +7,7 @@ if (isset($_SESSION['session'])) {
     }
 } else
     echo "<script>document.location= 'categorie_produit.php'</script>"; //s'il n'est pas connecté il ne peut pas être admin donc redirigé
+}
 
 $id = $_GET['id_produit']; //récupération de l'id produit qui a été cliqué dans la page précédente
 $req = $DB->requete("SELECT * FROM produits WHERE id_produit = '$id'"); //  on va récuperer toutes les infos du produit
