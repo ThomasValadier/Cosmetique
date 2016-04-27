@@ -1,0 +1,130 @@
+//- VARIABLES -//
+@import 'variables'
+
+//- PLACEHOLDER -//
+%styleFont
+    margin: 20px 0 25px 0
+    color: $gris-fonce
+
+//- STYLE - PRODUIT -//
+.content-produit
+    padding: 0
+    text-align: center
+    display: block
+    .img-produit
+        height: 500px
+        padding: 0
+        img
+            width: 60%
+            margin: 50px 0 0 0
+    .content-produit-details
+        background-color: $gris-clair
+        height: 500px
+        padding: 30px 40px
+        .nom-produit
+            h1
+                @extend %styleFont
+        .prix-produit
+            p
+                @extend %styleFont
+                font-size: 18px
+        .description-produit
+            display: block
+            height: 150px 
+            overflow: scroll
+            p
+                font-size: 17px
+                @extend %styleFont
+    .ajouter-produit
+        display: block
+        position: absolute
+        bottom: 50px
+        left: 110px
+        a
+            padding: 20px 50px
+            background-color: $orange
+            color: white
+            text-decoration: none
+            text-transform: uppercase
+
+//- CONTENT FORM COMMENTAIRE -//
+
+
+//- CONTENT COMMENTAIRE - CONTENT LISTE COMMENTAIRE -//
+.title-content-commentaire
+    display: block
+    text-align: center
+    margin-top: 50px
+    margin-bottom: 20px
+    background-color: $gris-clair
+    height: 120px
+    padding: 15px 0 0 0
+    text-transform: uppercase
+    h3
+        color: $orange
+    p
+        font-size: 10px
+        font-style: italic
+        color: $gris-fonce
+    // p
+    //     margin-top: 45px
+    //     text-transform: uppercase
+    //     color: $gris-fonce
+    // a
+    //     font-size: 50px
+    //     color: $gris-fonce
+    //     text-decoration: none
+    // a:hover
+    //     color: $orange
+
+.content-form-commentaire
+    padding: 0
+    text-align: center
+    margin-top: 20px
+    margin-bottom: 20px
+    textarea
+        width: 100%
+        height: 200px
+        background-color: white
+        border-color: $gris-clair
+        padding: 15px 20px
+        font-size: 15px
+    textarea:focus
+        outline: none
+    button
+        margin: 10px 0 0 0
+        padding: 15px 70px
+        border: none
+        background-color: $orange
+        color: white
+        text-transform: uppercase
+
+.content-commentaire
+    padding: 0
+    margin-bottom: 20px
+    .content-list-commentaire
+        //opacity: 0
+        width: 100%
+        background-color: $gris-light
+        padding: 15px 20px
+        margin-top: 20px
+        button
+            color: red
+            border: none
+            background-color: transparent
+        a
+            float: right
+            color: red
+        p
+            font-size: 15px
+            margin: 0 0 10px 0
+            padding: 0
+            color: $gris-fonce
+        h4
+            margin: 0
+            padding: 0
+            color: $gris-dark
+
+//- ANIMATION SLIDE COMMENTAIRE -//
+// .after-slide-commentaire
+//     opacity: 1

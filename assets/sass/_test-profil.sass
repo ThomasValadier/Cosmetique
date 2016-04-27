@@ -1,0 +1,57 @@
+@import 'variables'
+
+//- TEST PROFIL -//
+.content-test
+    border: 1px solid $gris-clair
+    height: 70vh
+    padding: 0
+    text-align: center
+    // TITLE TEST
+    .content-title-test
+        height: 30%
+        background-color: $gris-clair
+        padding: 23px 0 0 0
+        h1
+            text-transform: uppercase
+            color: $orange
+            font-size: 50px
+            margin: 0
+        p
+            font-size: 11px
+            text-transform: uppercase
+            font-style: italic
+            color: $gris-fonce
+    //- CONTENT QUESTION
+    .content-question-test
+        height: 70%
+        padding: 75px 0 0 0
+        .question-test
+            h4
+                text-transform: uppercase
+                color: $gris-fonce
+        .reponse-test
+            margin: 70px 0 0 0
+            display: block
+            .content-reponse1, .content-reponse2
+                width: 30%
+                input
+                    width: 220px
+                    height: 50px
+                    text-transform: uppercase
+                    border: 1px solid $orange
+                    background-color: white
+                    color: $orange
+                input:hover
+                    background-color: $orange
+                    color: white
+                input:focus
+                    background-color: $orange
+                    color: white
+                    outline: none
+            .content-reponse1
+                float: left
+                margin: 0 0 0 150px
+            .content-reponse2
+                float: right
+                margin: 0 150px 0 0
+    //- CONTENT VALIDATION FORM
